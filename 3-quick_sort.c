@@ -2,14 +2,16 @@
 
 /**
  * swap2 - Funct that swaps two integers.
+ * @array: the array to swap
  * @a: first integer to swap.
  * @b: second integer to swap.
  */
-void swap2(int *array, int i, int j)
+void swap2(int *array, int a, int b)
 {
-	int temp = array[i];
-	array[i] = array[j];
-	array[j] = temp;
+	int temp = array[a];
+
+	array[a] = array[b];
+	array[b] = temp;
 }
 
 /**
