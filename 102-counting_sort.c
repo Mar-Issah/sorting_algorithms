@@ -9,17 +9,18 @@ Return: The maximum integer in the array.
 */
 int get_max(int *array, int size)
 {
+	int max = array[0], i;
+
 	if (array == NULL || size < 1)
 		return 0;
 
-	int max = array[0];
-	for (int i = 1; i < size; i++)
+	for (i = 1; i < size; i++)
 	{
 		if (array[i] > max)
 			max = array[i];
 	}
 
-	return max;
+	return (max);
 }
 
 /**
@@ -56,8 +57,8 @@ void counting_sort(int *array, size_t size)
 		count[array[idx]]--;
 	}
 
-	for (int i = 0; i < (int)size; i++)
-		array[i] = sorted[i];
+	for (idx = 0; idx < (int)size; idx++)
+		array[idx] = sorted[idx];
 
 	free(count);
 	free(sorted);
