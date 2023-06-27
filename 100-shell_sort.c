@@ -1,4 +1,6 @@
 #include "sort.h"
+
+void swap(int *a, int *b);
 /**
  * shell_sort - Sort an arr of integers using shell sort algo.
  * @array: An array of integers.
@@ -6,6 +8,7 @@
  *
  * Description: Uses the Knuth interval sequence.
  */
+
 void shell_sort(int *array, size_t size)
 {
 
