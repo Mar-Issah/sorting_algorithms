@@ -1,7 +1,6 @@
 #include "sort.h"
 
 /**
-
 * get_max - Func that get the max value.
 * @array: An array of integers.
 * @size: The size of the array.
@@ -12,7 +11,7 @@ int get_max(int *array, int size)
 	int max = array[0], i;
 
 	if (array == NULL || size < 1)
-		return 0;
+		return (0);
 
 	for (i = 1; i < size; i++)
 	{
